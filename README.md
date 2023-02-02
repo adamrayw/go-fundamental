@@ -1,2 +1,2 @@
-# go-fundamental
-Fundamental of Go
+# Go
+Go (often referred to as Golang) is an open-source programming language created by Google in 2009. It is a statically-typed language with syntax similar to C, designed for efficient and fast system-level and network programming, with built-in support for concurrency and garbage collection. Go is known for its simplicity, reliability, and performance, and is used by companies such as Google, Dropbox, and Uber to build their infrastructure and applications.
