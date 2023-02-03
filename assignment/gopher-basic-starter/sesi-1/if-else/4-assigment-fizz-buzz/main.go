@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Assigment kali ini dinamakan fizzbuzz
 // Tuliskan program for loop dari 1 sampai dengan 100.
 // lalu setiap perulangan program ini.
@@ -14,7 +16,15 @@ func main() {
 	for i := 1; i <= 100; i++ {
 		//TODO:
 		//start_answer
-
+		if i%3 == 0 && i%5 == 0 {
+			fmt.Println("fizzbuzz")
+		} else if i%3 == 0 {
+			fmt.Println("fizz")
+		} else if i%5 == 0 {
+			fmt.Println("buzz")
+		} else {
+			fmt.Println(i)
+		}
 		//end_answer
 	}
 }
