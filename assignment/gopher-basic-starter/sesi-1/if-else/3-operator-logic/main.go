@@ -33,11 +33,29 @@ import "fmt"
 */
 
 func main() {
-	jenis_kelamin := "L"
-	nilai := 90
+	jenis_kelamin := "P"
+	nilai := 33
 
 	//TODO:
 	//start_answer
-	
+	if jenis_kelamin != "L" && jenis_kelamin != "P" {
+		fmt.Printf("Tidak Valid")
+	} else if jenis_kelamin == "L" {
+		if nilai >= 85 && nilai < 100 {
+			fmt.Printf("Laki - laki dan Nilai A")
+		} else if nilai >= 70 && nilai <= 84 {
+			fmt.Printf("Laki - laki dan Nilai B")
+		} else {
+			fmt.Printf("Laki - laki dan Nilai C")
+		}
+	} else if jenis_kelamin == "P" {
+		if nilai >= 85 && nilai < 100 {
+			fmt.Printf("Perempuan dan Nilai A")
+		} else if nilai >= 70 && nilai <= 84 {
+			fmt.Printf("Perempuan dan Nilai B")
+		} else {
+			fmt.Printf("Perempuan dan Nilai C")
+		}
+	}
 	//end_answer
 }
