@@ -20,10 +20,22 @@ import "fmt"
 
 func main() {
 	jenis_kelamin := "L"
-	nilai := 90
+	nilai := 77
 
 	//TODO:
 	//start_answer
-	
+	if jenis_kelamin == "L" {
+		if nilai >= 80 {
+			fmt.Printf("Laki - laki dan Lulus")
+		} else {
+			fmt.Printf("Laki - laki dan Tidak Lulus")
+		}
+	} else {
+		if nilai >= 80 {
+			fmt.Printf("Perempuan dan Lulus")
+		} else {
+			fmt.Printf("Perempuan dan Tidak Lulus")
+		}
+	}
 	//end_answer
 }
