@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 	Sekarang kalian akan mencoba membuat program sederhana konversi nilai
 	Jika nilai 100 = Lulus Sempurna
@@ -10,9 +12,16 @@ package main
 */
 
 func main() {
-	nilai := 71
+	nilai := 100
 
 	//TODO:
 	//start_answer
+	if nilai == 100 {
+		fmt.Printf("Sempurna")
+	} else if nilai >= 80 || nilai == 99 {
+		fmt.Printf("Lulus")
+	} else {
+		fmt.Printf("Tidak Lulus")
+	}
 	//end_answer
 }
