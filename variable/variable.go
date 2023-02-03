@@ -9,7 +9,7 @@ func main() {
 	// // Multiple variables of different types
 	var num, name, isTrue = 1, "Adam", true
 
-	// In Go language variables are created in two different ways:
+	// In Go language variables are created in several different ways:
 	// declare variable with data type
 	var firstName string = "Adam"
 
