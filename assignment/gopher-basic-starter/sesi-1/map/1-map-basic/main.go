@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Disini kita akan belajar tentang map
 // map itu kalian bisa anggap sebagai kamus, terdapat kata:definisi
 // atau dapat dikatakan key:value
@@ -23,19 +25,32 @@ func main() {
 		"senang":   "happy",
 	*/
 	//start_answer
-
+	kata_indonesia := map[string]string{
+		"mobil":    "car",
+		"sekolah":  "school",
+		"bangunan": "building",
+		"sakit":    "sick",
+		"senang":   "happy",
+	}
 	//end_answer
 
 	//Untuk mengakses value map kita butuh tau key dari value pada map
 	//TODO: cetak value dari key "mobil"
 	//start_answer
-
+	cetakMobil := kata_indonesia["mobil"]
+	fmt.Println(cetakMobil)
 	//begin_answer
 
 	//Kita juga bisa mengecek suatu key pada map ada atau tidak
 	//TODO: cek apakah value dari "sedih" ada pada map, jika tidak cetak "kata tidak terdapat pada kamus"
 	//start_answer
+	value, isExist := kata_indonesia["mobil"]
 
+	if isExist {
+		fmt.Println(value, " available!")
+	} else {
+		fmt.Println("kata tidak terdapat pada kampus")
+	}
 	//end_answer
 
 	//Kalian masih ingan 'for range', kita akan mencetak seluruh isi map dengan for-rang
@@ -49,6 +64,8 @@ func main() {
 		senang:happy
 	*/
 	//start_answer
-
+	for index, value := range kata_indonesia {
+		fmt.Println(index, ":", value)
+	}
 	//end_answer
 }
