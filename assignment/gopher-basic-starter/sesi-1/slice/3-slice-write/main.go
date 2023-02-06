@@ -9,7 +9,8 @@ func main() {
 
 	//TODO: ubah nilai indeks 3 dan 4, menjadi 0
 	//start_answer
-	
+	sliceInt[3] = 0
+	sliceInt[4] = 0
 	//end_answer
 	fmt.Println(sliceInt)
 
@@ -18,7 +19,7 @@ func main() {
 
 	//TODO: gabungkan sliceIntNew ke sliceInt
 	//start_answer
-	
+	sliceInt = append(sliceInt, sliceIntNew...)
 	//end_answer
 	fmt.Println(sliceInt)
 }
