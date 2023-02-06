@@ -16,9 +16,9 @@ func main() {
 	}
 	//TODO: hapus key "sekolah"
 	//start_answer
-	
+	delete(kamus, "sekolah")
 	//end_answer
-	fmt.Println()
+	fmt.Println(kamus)
 	for k, v := range kamus {
 		fmt.Println(k, ":", v)
 	}
