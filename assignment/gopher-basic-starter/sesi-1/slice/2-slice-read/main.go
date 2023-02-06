@@ -27,6 +27,8 @@ func main() {
 		...
 	*/
 	//start_answer
-
+	for index, value := range slice {
+		fmt.Println("index :", index, "nilai :", value)
+	}
 	//end_answer
 }
