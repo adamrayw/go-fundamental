@@ -18,6 +18,16 @@ func filterGenap(number int) bool {
 // TODO: buatlah fungsi cetakGenap, yang menerima slice of int, dan mengembalikan hanya bilangan genap
 // Gunakan fungsi filterGenap sebagai parameter fungsi cetakGenap
 //start_answer
+func cetakGenap(numbers []int, filter func(number int) bool) []int {
+	var sliceGenap []int
+	for _, value := range numbers {
+		if filter(value) {
+			sliceGenap = append(sliceGenap, value)
+		}
+	}
+
+	return sliceGenap
+}
 
 //end_answer
 
