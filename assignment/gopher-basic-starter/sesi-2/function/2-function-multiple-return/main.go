@@ -11,7 +11,12 @@ import "fmt"
 	Square(2,3) --> 4,9
 */
 //start_answer
+func Square(a int, b int) (int, int) {
+	result1 := a * a
+	result2 := b * b
 
+	return result1, result2
+}
 
 //end_answer
 
