@@ -19,7 +19,11 @@ import "fmt"
 	score float64
 */
 //start_answer
-
+type Student struct {
+	name  string
+	age   int
+	score float64
+}
 
 //end_answer
 
