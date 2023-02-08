@@ -13,8 +13,21 @@ func main() {
 	age := 20
 	isMarried := true
 
+	addressName := &name
+	addressAge := &age
+	addressIsMarried := &isMarried
+
 	//TODO: Dari variable yang telah diberikan, kamu dapat mencoba untuk menggunakan address operator dan indirect operator.
 	//start_answer
-	
+	fmt.Println("")
+	fmt.Println("Mendapatkan Memory Address dari ketiga variable")
+	fmt.Println("Name :", addressName)
+	fmt.Println("Age :", addressAge)
+	fmt.Println("isMarried :", addressIsMarried)
+	fmt.Println("")
+	fmt.Println("Mendapatkan value dari Memory Address")
+	fmt.Println("Name :", *addressName)
+	fmt.Println("Age :", *addressAge)
+	fmt.Println("isMarried :", *addressIsMarried)
 	//end_answer
 }
