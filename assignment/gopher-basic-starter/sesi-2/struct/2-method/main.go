@@ -48,7 +48,11 @@ func (s *Student) averageScore() float64 {
 // TODO: buatlah method printSubjects yang akan mencetak seluruh subject yang diambil oleh object student
 // Output: Kalkulus, Alpro, ASD, Kewarganegaraan
 //start_answer
-
+func (s *Student) printSubjects() {
+	for _, subject := range s.subjects {
+		fmt.Printf(subject.subjectName)
+	}
+}
 
 //end_answer
 
