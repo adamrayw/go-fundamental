@@ -11,7 +11,13 @@ func squarePanic(number *int) {
 //TODO: buatlah fungsi square yang meneima pointer int, dan ubah nilainya menjadi hasil pangkat, cek apakah valunya nil atau tidak
 // jika nil, cetak "nilai nil"
 //start_answer
-
+func square(number *int) {
+	if number == nil {
+		fmt.Println("Nil")
+	} else {
+		squarePanic(number)
+	}
+}
 
 //end_answer
 
@@ -20,7 +26,7 @@ func main() {
 	var numberEmpty *int
 
 	// Silahkan comment/uncomment baris dibawah untuk mencoba solusi yang dibuat
-	//squarePanic(numberEmpty)
+	// squarePanic(numberEmpty)
 
 	// ------- //
 	square(numberEmpty) // nilai nil
