@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 /*
 	Teman-teman sudah belajar interface di materi sebelumnya, dan sekarang saatnya untuk mengimplementasikan interface tersebut.
@@ -11,8 +14,8 @@ import "fmt"
 	Implementasikan interface TaxCalculator pada struct Employee.
 */
 
-//TODO : Buatlah interface EmployeeInterface yang memiliki method CalculateTax yang mengembalikan nilai float64 dan error
-//start_answer
+// TODO : Buatlah interface EmployeeInterface yang memiliki method CalculateTax yang mengembalikan nilai float64 dan error
+// start_answer
 type EmployeeInterface interface {
 	CalculateTax() (float64, error)
 }
@@ -33,7 +36,13 @@ func (e *Employee) CalculateTax() (float64, error) {
 		Jika salary < 0 maka return error "salary cannot be negative"
 	*/
 	//start_answer
+	if e.Salary < 0 {
+		return 0, errors.New("salary cannot be negative")
+	} else if e.Salary < 1000 {
+		return e.Salary * 0.1, nil
+	}
 
+	return e.Salary * 0.2, nil
 	//end_answer
 }
 
