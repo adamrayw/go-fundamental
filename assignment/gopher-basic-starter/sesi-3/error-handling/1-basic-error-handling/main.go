@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 /*
 	Teman-teman sudah belajar error handling pada sesi sebelumnya.
@@ -21,7 +24,11 @@ func DivWithErr(a int, b int) (int, error) {
 	//TODO: buatlah fungsi DivWithErrSendiri yang menerima dua parameter bertipe int dan mengembalikan hasil pembagian a dengan b dan error.
 
 	//start_answer
+	if b == 0 {
+		return 0, errors.New("Pembagian tidak boleh 0")
+	}
 
+	return a / b, nil
 	//end_answer
 }
 
