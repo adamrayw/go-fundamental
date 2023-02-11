@@ -20,7 +20,7 @@ func (s *Student) GetAge() int {
 	return s.Age
 }
 
-func (s *Student) getScore() string {
+func (s *Student) GetScore() string {
 	if s.Score > 80 {
 		return "Awesome!"
 	} else {
